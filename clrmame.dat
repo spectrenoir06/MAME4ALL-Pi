@@ -34161,6 +34161,22 @@ game (
 )
 
 game (
+	name cphd
+	description "cphd"
+	rom ( name cphd.c4 size 33554432 crc 0 )
+	rom ( name cphd.c2 size 33554432 crc 0 )
+	rom ( name cphd.c3 size 33554432 crc 0 )
+	rom ( name cphd.c1 size 33554432 crc 0 )
+	rom ( name cphd.m1 size 65536 crc 0 )
+	rom ( name cphd.p1 size 1048576 crc 0 )
+	rom ( name cphd.p2 size 8388608 crc 0 )
+	rom ( name cphd.s1 size 131072 crc 0 )
+	rom ( name cphd.v1 size 33554432 crc 0 )
+	rom ( name cphd.v2 size 33554432 crc 0 )
+)
+
+
+game (
 	name wldcourt
 	description "wldcourt"
 	rom ( name ns1-mcu.bin size 4096 crc ffb5c0bd )

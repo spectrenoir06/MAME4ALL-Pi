@@ -2202,6 +2202,7 @@ struct fe_driver fe_drivers[NUMGAMES] = {
 { "Willow (Japan, English)"                                                                               ,"willow"       , "mame", 3, 0 } ,												
 { "Willow (Japan, Japanese)"                                                                              ,"willowj"      , "mame", 3, 0 } ,												
 { "Windjammers / Flying Power Disc"                                                                       ,"wjammers"     , "neomame", 3, 0 } ,												
+{ "Crouching Pony Hidden-Dragon"                                                                       ,"cphd"     , "neomame", 3, 0 } ,												
 { "Wiping"                                                                                                ,"wiping"       , "mame", 3, 0 } ,												
 { "Wise Guy"                                                                                              ,"wiseguy"      , "mame", 1, 0 } ,												
 { "Wiz (Taito)"                                                                                           ,"wizt"         , "mame", 3, 0 } ,												

@@ -2942,7 +2942,8 @@ TESTDRIVER( dlair )
 	DRIVER( gururin )	/* 0067 (c) 1994 Face */
 	DRIVER( pspikes2 )	/* 0068 (c) 1994 Video System Co. */
 	DRIVER( fatfury3 )	/* 0069 (c) 1995 SNK */
-	/* 0070 */
+	DRIVER( cphd )	/* 0070 (c) 2014 Le Cortex */
+  /* 0070 */
 	/* 0071 */
 	/* 0072 */
 	DRIVER( panicbom )	/* 0073 (c) 1994 Eighting / Hudson */

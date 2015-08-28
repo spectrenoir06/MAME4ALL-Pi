@@ -1174,6 +1174,33 @@ static struct MachineDriver machine_driver_raster =
 
 /******************************************************************************/
 
+ROM_START( cphd )
+	//ROM_REGION( 0x900000, REGION_CPU1 )
+	//ROM_LOAD_WIDE_SWAP( "cphd.p1", 0x000000, 0x100000, 0x00000000 )
+  	//ROM_LOAD_WIDE_SWAP( "cphd.p2", 0x100000, 0x800000, 0x00000000 )
+	
+	ROM_REGION( 0x500000, REGION_CPU1 )
+	ROM_LOAD_WIDE_SWAP( "cphd.p1", 0x000000, 0x100000, 0x00000000 )
+  	ROM_LOAD_WIDE_SWAP( "cphd.p2", 0x100000, 0x400000, 0x00000000 )
+
+	NEO_SFIX_128K( "cphd.s1", 0x00000000 )
+
+	NEO_BIOS_SOUND_64K( "cphd.m1", 0x00000000 )
+
+	ROM_REGION( 0x2000000, REGION_SOUND1 | REGIONFLAG_SOUNDONLY )
+	ROM_LOAD( "cphd.v1", 0x000000, 0x2000000, 0x00000000 )
+	ROM_REGION( 0x2000000, REGION_SOUND2 | REGIONFLAG_SOUNDONLY )
+	ROM_LOAD( "cphd.v2", 0x000000, 0x2000000, 0x00000000 )
+
+	//NO_DELTAT_REGION
+
+	ROM_REGION( 0x8000000, REGION_GFX2 )
+	ROM_LOAD_GFX_EVEN( "cphd.c1", 0x000000,  0x2000000, 0x00000000 )
+	ROM_LOAD_GFX_ODD ( "cphd.c2", 0x000000,  0x2000000, 0x00000000 )
+	ROM_LOAD_GFX_EVEN( "cphd.c3", 0x4000000, 0x2000000, 0x00000000 )
+	ROM_LOAD_GFX_ODD ( "cphd.c4", 0x4000000, 0x2000000, 0x00000000 )
+ROM_END
+
 ROM_START( nam1975 )
 	ROM_REGION( 0x100000, REGION_CPU1 )
 	ROM_LOAD_WIDE_SWAP( "nam_p1.rom", 0x000000, 0x080000, 0xcc9fc951 )
@@ -4588,6 +4615,9 @@ GAMEX( 1990, neogeo, 0, neogeo, neogeo, neogeo, ROT0, "SNK", "Neo-Geo", NOT_A_DR
 /******************************************************************************/
 
 /*    YEAR  NAME      PARENT    MACHINE INPUT    INIT    MONITOR  */
+
+/* Le Cortex */
+GAME( 2014, cphd, neogeo,   neogeo, neogeo,  neogeo, ROT0, "Le Cortex", "Crouching Pony Hidden-Dragon" )
 
 /* SNK */
 GAME( 1990, nam1975,  neogeo,   neogeo, neogeo,  neogeo, ROT0,       "SNK", "NAM-1975" )
